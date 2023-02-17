@@ -30,6 +30,6 @@ contract WizardCouncil is Ownable, ERC721A {
     }
 
     function tokenURI(uint256 _tokenId) public view override returns (string memory) {
-        return string(abi.encodePacked(BASE_URI, Strings.toString(_tokenId)));
+        return string(abi.encodePacked(BASE_URI));
     }
 }
